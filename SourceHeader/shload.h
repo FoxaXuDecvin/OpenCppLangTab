@@ -9,7 +9,8 @@
 #include"include.h"
 #include"_sh_prt.h"
 #include"_sh_resource.h"
-
+#include"_sh_version.h"
+#include"_sh_switch.h"
 
 
 //END

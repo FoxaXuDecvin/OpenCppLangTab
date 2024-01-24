@@ -19,6 +19,9 @@
     <Filter Include="头文件\Code">
       <UniqueIdentifier>{42838848-0d3f-4043-a445-b116fa3ae114}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\FoxaXu">
+      <UniqueIdentifier>{ffa104ac-d726-4e2d-babc-6ea2d63889df}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Launcher\launch.cpp">
@@ -39,6 +42,12 @@
       <Filter>头文件\SourceHeader</Filter>
     </ClInclude>
     <ClInclude Include="SourceHeader\_sh_resource.h">
+      <Filter>头文件\SourceHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceHeader\_sh_version.h">
+      <Filter>头文件\FoxaXu</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceHeader\_sh_switch.h">
       <Filter>头文件\SourceHeader</Filter>
     </ClInclude>
   </ItemGroup>

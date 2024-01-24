@@ -4,6 +4,6 @@
 
 int _HeadMainLoad() {
 	_prtoutmsg("Hello World");
-
+	_pause();
 	return 0;
 }

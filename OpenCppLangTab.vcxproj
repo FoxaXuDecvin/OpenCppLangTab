@@ -27,6 +27,8 @@
     <ClInclude Include="SourceHeader\shload.h" />
     <ClInclude Include="SourceHeader\_sh_prt.h" />
     <ClInclude Include="SourceHeader\_sh_resource.h" />
+    <ClInclude Include="SourceHeader\_sh_switch.h" />
+    <ClInclude Include="SourceHeader\_sh_version.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
