@@ -1,4 +1,4 @@
-#include"..\main.h"
+#include"Code\main.h"
 //EDIT ON MAIN_H
 using namespace std;
 
@@ -23,6 +23,8 @@ int main(int argc, char* argv[]) {
             printmsgoclt();
             return 0;
         }
+
+        argsApi(readbuffer);
     }
 
     int return_code = _HeadMainLoad();

@@ -19,19 +19,20 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Launcher\launch.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="SourceHeader\include.h" />
-    <ClInclude Include="main.h" />
-    <ClInclude Include="SourceHeader\shload.h" />
-    <ClInclude Include="SourceHeader\_sh_prt.h" />
-    <ClInclude Include="SourceHeader\_sh_resource.h" />
-    <ClInclude Include="SourceHeader\_sh_switch.h" />
-    <ClInclude Include="SourceHeader\_sh_version.h" />
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CLang\launch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CLang\Code\main.h" />
+    <ClInclude Include="CLang\SourceHeader\include.h" />
+    <ClInclude Include="CLang\SourceHeader\shload.h" />
+    <ClInclude Include="CLang\SourceHeader\_sh_prt.h" />
+    <ClInclude Include="CLang\SourceHeader\_sh_resource.h" />
+    <ClInclude Include="CLang\SourceHeader\_sh_switch.h" />
+    <ClInclude Include="CLang\SourceHeader\_sh_version.h" />
+    <ClInclude Include="resource1.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="OpenCppLangTab.rc" />
@@ -61,7 +62,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>

@@ -14,47 +14,47 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="头文件\SourceHeader">
-      <UniqueIdentifier>{160dcee3-fcbb-47a6-b75d-b09776590c0f}</UniqueIdentifier>
+      <UniqueIdentifier>{7e4ee03f-b1e5-4d82-bbfa-d502dff36c31}</UniqueIdentifier>
     </Filter>
     <Filter Include="头文件\Code">
-      <UniqueIdentifier>{42838848-0d3f-4043-a445-b116fa3ae114}</UniqueIdentifier>
+      <UniqueIdentifier>{850706f0-8953-4505-a90d-9cd0d432d346}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\FoxaXu">
-      <UniqueIdentifier>{ffa104ac-d726-4e2d-babc-6ea2d63889df}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Launcher\launch.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="main.h">
-      <Filter>头文件\Code</Filter>
-    </ClInclude>
-    <ClInclude Include="SourceHeader\shload.h">
-      <Filter>头文件\SourceHeader</Filter>
-    </ClInclude>
-    <ClInclude Include="SourceHeader\include.h">
-      <Filter>头文件\SourceHeader</Filter>
-    </ClInclude>
-    <ClInclude Include="SourceHeader\_sh_prt.h">
-      <Filter>头文件\SourceHeader</Filter>
-    </ClInclude>
-    <ClInclude Include="SourceHeader\_sh_resource.h">
-      <Filter>头文件\SourceHeader</Filter>
-    </ClInclude>
-    <ClInclude Include="SourceHeader\_sh_version.h">
-      <Filter>头文件\FoxaXu</Filter>
-    </ClInclude>
-    <ClInclude Include="SourceHeader\_sh_switch.h">
-      <Filter>头文件\SourceHeader</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt">
       <Filter>资源文件</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CLang\launch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\_sh_switch.h">
+      <Filter>头文件\SourceHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\_sh_version.h">
+      <Filter>头文件\SourceHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\include.h">
+      <Filter>头文件\SourceHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\shload.h">
+      <Filter>头文件\SourceHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\_sh_prt.h">
+      <Filter>头文件\SourceHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\_sh_resource.h">
+      <Filter>头文件\SourceHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\Code\main.h">
+      <Filter>头文件\Code</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="OpenCppLangTab.rc">
