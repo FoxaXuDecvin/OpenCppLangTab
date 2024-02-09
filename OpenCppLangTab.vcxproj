@@ -28,7 +28,13 @@
     <ClInclude Include="CLang\Code\main.h" />
     <ClInclude Include="CLang\SourceHeader\include.h" />
     <ClInclude Include="CLang\SourceHeader\shload.h" />
+    <ClInclude Include="CLang\SourceHeader\System\LUX.h" />
+    <ClInclude Include="CLang\SourceHeader\System\pub.h" />
+    <ClInclude Include="CLang\SourceHeader\System\WIN.h" />
+    <ClInclude Include="CLang\SourceHeader\_sh_directory_api.h" />
+    <ClInclude Include="CLang\SourceHeader\_sh_file_api.h" />
     <ClInclude Include="CLang\SourceHeader\_sh_prt.h" />
+    <ClInclude Include="CLang\SourceHeader\_sh_random.h" />
     <ClInclude Include="CLang\SourceHeader\_sh_resource.h" />
     <ClInclude Include="CLang\SourceHeader\_sh_switch.h" />
     <ClInclude Include="CLang\SourceHeader\_sh_version.h" />

@@ -19,6 +19,9 @@
     <Filter Include="头文件\Code">
       <UniqueIdentifier>{850706f0-8953-4505-a90d-9cd0d432d346}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\SourceHeader\SYSTEM">
+      <UniqueIdentifier>{aa4d0b82-8a5f-4483-a5c4-e408087907ad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt">
@@ -54,6 +57,24 @@
     </ClInclude>
     <ClInclude Include="CLang\Code\main.h">
       <Filter>头文件\Code</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\_sh_random.h">
+      <Filter>头文件\SourceHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\_sh_directory_api.h">
+      <Filter>头文件\SourceHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\_sh_file_api.h">
+      <Filter>头文件\SourceHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\System\WIN.h">
+      <Filter>头文件\SourceHeader\SYSTEM</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\System\LUX.h">
+      <Filter>头文件\SourceHeader\SYSTEM</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\System\pub.h">
+      <Filter>头文件\SourceHeader\SYSTEM</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -9,6 +9,11 @@ void _prtoutmsg(string message) {
 	return;
 }
 
+void _prtendl(void) {
+	printf("\n");
+	return;
+}
+
 void _coutmsg(string message) {
 	cout << message << endl;
 	return;

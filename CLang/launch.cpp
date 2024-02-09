@@ -5,6 +5,7 @@ using namespace std;
 string readbuffer;
 
 void printmsgoclt() {
+    _prtendl();
     _prtoutmsg("Build By OpenCLT");
     _prtoutmsg($version_title + "   " + to_string($version_code));
     _prtoutmsg("OpenCLT " + $version_msg);
