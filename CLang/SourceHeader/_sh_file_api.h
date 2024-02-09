@@ -4,6 +4,9 @@
 
 #include"include.h"
 
+//DEF
+string _fileapi_textread(string File, int line_number);
+
 //API
 
 int CountLines(string filename)
@@ -26,6 +29,18 @@ int CountLines(string filename)
 		return n;
 	}
 }
+int getdocmax(string file) {
+	int maxread = 1;
+BackCheckRUN:
+	string ReadNULLCheck = _fileapi_textread(file, maxread);
+	if (ReadNULLCheck == "overline") {
+		maxread--;
+		return maxread;
+	}
+	maxread++;
+	goto BackCheckRUN;
+}
+
 
 //Main
 bool _existfile(const std::string& filename) {
@@ -86,3 +101,19 @@ string _fileapi_textread(string File, int line_number) {
 	return temp;
 }
 
+void _fileapi_typetext(string file) {
+	if (_existfile(file)) {
+		int maxdocsize = getdocmax(file);
+
+		maxdocsize++;
+
+		for (int startRoll = 1; maxdocsize != startRoll; startRoll++) {
+			_api_prtmsg(_fileapi_textread(file, startRoll)+"\n");
+		}
+		return;
+	}
+	else {
+		_sh_throw_error("FileAPI.TypeText :  File Not Exist");
+		return;
+	}
+}

@@ -10,7 +10,7 @@
 #include"System/pub.h"
 
 void _sh_throw_error(string message) {
-	_api_prtmsg("----[ERROR](MESSAGE) :  " + message);
+	_api_prtmsg("----[ERROR](MESSAGE) :  " + message + "\n");
 	return;
 }
 
