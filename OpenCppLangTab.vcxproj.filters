@@ -55,7 +55,7 @@
     <ClInclude Include="CLang\SourceHeader\_sh_resource.h">
       <Filter>头文件\SourceHeader</Filter>
     </ClInclude>
-    <ClInclude Include="CLang\Code\main.h">
+    <ClInclude Include="CLang\Code\example.h">
       <Filter>头文件\Code</Filter>
     </ClInclude>
     <ClInclude Include="CLang\SourceHeader\_sh_random.h">
@@ -75,6 +75,12 @@
     </ClInclude>
     <ClInclude Include="CLang\SourceHeader\System\pub.h">
       <Filter>头文件\SourceHeader\SYSTEM</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\sh_settings.h">
+      <Filter>头文件\SourceHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\Code\launchscreen.h">
+      <Filter>头文件\Code</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -6,6 +6,7 @@
 
 #pragma once
 
+//Dedicated
 #include"include.h"
 #include"_sh_prt.h"
 #include"_sh_resource.h"

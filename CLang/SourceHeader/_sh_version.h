@@ -10,6 +10,8 @@ string $version_msg = "startbuild";
 
 string $codename = "Lex";
 
-int $version_code = 1003;
+int $version_code = 1004;
+
+string $version_code_str = to_string($version_code);
 
 //END

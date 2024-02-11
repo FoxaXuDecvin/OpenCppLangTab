@@ -25,9 +25,11 @@
     <ClCompile Include="CLang\launch.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CLang\Code\main.h" />
+    <ClInclude Include="CLang\Code\example.h" />
+    <ClInclude Include="CLang\Code\launchscreen.h" />
     <ClInclude Include="CLang\SourceHeader\include.h" />
     <ClInclude Include="CLang\SourceHeader\shload.h" />
+    <ClInclude Include="CLang\SourceHeader\sh_settings.h" />
     <ClInclude Include="CLang\SourceHeader\System\LUX.h" />
     <ClInclude Include="CLang\SourceHeader\System\pub.h" />
     <ClInclude Include="CLang\SourceHeader\System\WIN.h" />

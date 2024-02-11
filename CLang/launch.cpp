@@ -1,5 +1,17 @@
-#include"Code\main.h"
-//EDIT ON MAIN_H
+//Launch
+// Main Cpp
+
+//NET Loader
+
+#include"Code\example.h"
+
+//EDIT ON ANY_H
+
+
+
+//Other Main
+#include"Code\launchscreen.h"
+
 using namespace std;
 
 string readbuffer;
@@ -18,6 +30,17 @@ void printmsgoclt() {
 }
 
 int main(int argc, char* argv[]) {
+    
+    if (__settings_displaylaunchscreen) {
+        _LaunchScreen();
+        sleepapi(__settings_displaylaunchscreen_time);
+        cleanConsole();
+    }
+    else {
+
+    }
+
+
     for (int readargc = 1, fileswitch = 0; readargc != argc; readargc++) {
         readbuffer = argv[readargc];
         if (readbuffer == "--oclt-version") {
