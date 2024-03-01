@@ -3,6 +3,7 @@
 #include<string>
 #include<iostream>
 #include<dirent.h>
+//Please Install CURL
 #include"curl/curl.h"
 #include"sys/stat.h"
 
@@ -140,11 +141,11 @@ string ReplaceCharN(string info, string replaceword, string nword) {
 //------------------------------
 //0-FAILED
 //1-TRUE
-int URLDown(string URL, string Save) {
+bool URLDown(string URL, string Save) {
 	Save = ReplaceCharN(Save,"\\","/");
 
 	dl_curl_get_req(URL, Save);
-	if (check_file_existenceA) {
+	if (check_file_existenceA(Save)) {
 		return 1;
 	}
 	else {

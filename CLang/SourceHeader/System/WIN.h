@@ -37,6 +37,7 @@ bool check_file_existenceA(const std::string& filename) {
 }
 //NET CORE
 
+//Use Windows API  <URLMON.DLL>
 #include<urlmon.h>
 #pragma comment(lib,"URlmon.lib")
 using namespace std;

@@ -88,6 +88,9 @@
     <ClInclude Include="CLang\SourceHeader\Settings\sh_settings.h">
       <Filter>头文件\SourceHeader\Settings</Filter>
     </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\_sh_openhttp.h">
+      <Filter>头文件\SourceHeader</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="OpenCppLangTab.rc">

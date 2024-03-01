@@ -20,6 +20,9 @@ int _HeadMainLoad() {
 	_prtoutmsg("Open Cpp Lang Tab. System Software Framework");
 	_prtoutmsg("Copyright FoxaXu 2024");
 	_prtoutmsg("Version :  " + to_string($version_code) + " Build Code :  " + $codename);
+	_prtoutmsg("Name :    " + _$GetSelfName);
+	_prtoutmsg("Path :    " + _$GetSelfPath);
+	_prtoutmsg("Copyright FoxaXu 2024");
 	_pause();
 	return 0;
 }

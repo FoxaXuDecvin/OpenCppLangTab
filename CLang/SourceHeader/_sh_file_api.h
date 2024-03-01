@@ -117,3 +117,7 @@ void _fileapi_typetext(string file) {
 		return;
 	}
 }
+
+//Other
+
+string _$GetSelfName = GetFileName();
