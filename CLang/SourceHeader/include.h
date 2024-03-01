@@ -6,8 +6,8 @@
 #include<stdio.h>
 #include<random>
 
-#include"_sh_version.h"
-#include"sh_settings.h"
+#include"Settings\_sh_version.h"
+#include"Settings\sh_settings.h"
 #include"System/pub.h"
 
 void _sh_throw_error(string message) {

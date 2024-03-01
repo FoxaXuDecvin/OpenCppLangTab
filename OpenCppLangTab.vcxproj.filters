@@ -22,6 +22,12 @@
     <Filter Include="头文件\SourceHeader\SYSTEM">
       <UniqueIdentifier>{aa4d0b82-8a5f-4483-a5c4-e408087907ad}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Engine">
+      <UniqueIdentifier>{0c69b789-59c9-448f-bcf7-2713c3d20ab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\SourceHeader\Settings">
+      <UniqueIdentifier>{00f13ac7-2090-4fe9-a7a2-516f10032032}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt">
@@ -40,19 +46,10 @@
     <ClInclude Include="CLang\SourceHeader\_sh_switch.h">
       <Filter>头文件\SourceHeader</Filter>
     </ClInclude>
-    <ClInclude Include="CLang\SourceHeader\_sh_version.h">
-      <Filter>头文件\SourceHeader</Filter>
-    </ClInclude>
     <ClInclude Include="CLang\SourceHeader\include.h">
       <Filter>头文件\SourceHeader</Filter>
     </ClInclude>
-    <ClInclude Include="CLang\SourceHeader\shload.h">
-      <Filter>头文件\SourceHeader</Filter>
-    </ClInclude>
     <ClInclude Include="CLang\SourceHeader\_sh_prt.h">
-      <Filter>头文件\SourceHeader</Filter>
-    </ClInclude>
-    <ClInclude Include="CLang\SourceHeader\_sh_resource.h">
       <Filter>头文件\SourceHeader</Filter>
     </ClInclude>
     <ClInclude Include="CLang\Code\example.h">
@@ -76,11 +73,20 @@
     <ClInclude Include="CLang\SourceHeader\System\pub.h">
       <Filter>头文件\SourceHeader\SYSTEM</Filter>
     </ClInclude>
-    <ClInclude Include="CLang\SourceHeader\sh_settings.h">
-      <Filter>头文件\SourceHeader</Filter>
-    </ClInclude>
     <ClInclude Include="CLang\Code\launchscreen.h">
       <Filter>头文件\Code</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\shload.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\Settings\_sh_resource.h">
+      <Filter>头文件\SourceHeader\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\Settings\_sh_version.h">
+      <Filter>头文件\SourceHeader\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SourceHeader\Settings\sh_settings.h">
+      <Filter>头文件\SourceHeader\Settings</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
