@@ -1,2 +1,3 @@
 Resource Code:
-       Code/Main.h
+       Edit on launch.cpp
+select your custom Cpp Header
