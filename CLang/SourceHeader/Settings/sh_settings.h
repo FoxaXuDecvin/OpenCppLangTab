@@ -13,3 +13,8 @@ unsigned int __settings_displaylaunchscreen_time = 1;
 // program will display launch screen
 // On   Code/launchscreen.h
 
+//Disabled throw Error
+bool __settings_throwErrorMode = true;
+//if true
+//program will throw every error
+// or false to disabled output all error info

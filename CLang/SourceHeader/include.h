@@ -11,6 +11,7 @@
 #include"System/pub.h"
 
 void _sh_throw_error(string message) {
+	if (__settings_throwErrorMode == false)return;
 	_api_prtmsg("----[ERROR](MESSAGE) :  " + message + "\n");
 	return;
 }
