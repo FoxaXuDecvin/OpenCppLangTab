@@ -43,3 +43,58 @@ void _api_prtmsg(string msg) {
 	printf(msg.c_str());
 	return;
 }
+
+//Calcium Copy
+//Read Env NEW
+string _api_PartRead(string Info, string StartMark, string EndMark) {
+	int MaxInfoSize = Info.size();
+	int startmarkadd, endmarkadd, readptr;
+	string readbufferPR;
+	readptr = 0;
+
+	if (StartMark == "$FROMSTART$") {
+		startmarkadd = 0;
+		goto SKIPGETMARKSTART;
+	}
+
+	//GetStart
+	for (; readbufferPR != StartMark; readptr++) {
+		if (readptr > MaxInfoSize) {
+			//cout << "Message :  " << Info << endl;
+			return "notfoundstart :  " + Info;
+		}
+		readbufferPR = Info[readptr];
+	}
+
+	startmarkadd = readptr;
+
+SKIPGETMARKSTART:
+	readbufferPR = "";
+	//GetEnd
+	if (EndMark == "$FROMEND$") {
+		endmarkadd = MaxInfoSize;
+		goto skipENDGET;
+	}
+	for (; readbufferPR != EndMark; readptr++) {
+		if (readptr > MaxInfoSize) {
+			return "notfoundEnd :  " + Info;
+		}
+		readbufferPR = Info[readptr];
+	}
+
+	endmarkadd = readptr;
+	endmarkadd--;
+
+skipENDGET:
+	//cout << "Start :  " << startmarkadd << "  End :  " << endmarkadd << endl;
+
+	//Start Process CMD
+
+	//ReadPTR
+	readbufferPR = "";
+	for (readptr = startmarkadd; readptr != endmarkadd; readptr++) {
+		readbufferPR = readbufferPR + Info[readptr];
+	}
+
+	return readbufferPR;
+}

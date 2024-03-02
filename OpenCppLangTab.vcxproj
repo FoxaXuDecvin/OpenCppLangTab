@@ -27,6 +27,7 @@
   <ItemGroup>
     <ClInclude Include="CLang\Code\example.h" />
     <ClInclude Include="CLang\Code\launchscreen.h" />
+    <ClInclude Include="CLang\Engine\_eg_sipcfg.h" />
     <ClInclude Include="CLang\shload.h" />
     <ClInclude Include="CLang\SourceHeader\include.h" />
     <ClInclude Include="CLang\SourceHeader\Settings\sh_settings.h" />

@@ -91,6 +91,9 @@
     <ClInclude Include="CLang\SourceHeader\_sh_openhttp.h">
       <Filter>头文件\SourceHeader</Filter>
     </ClInclude>
+    <ClInclude Include="CLang\Engine\_eg_sipcfg.h">
+      <Filter>头文件\Engine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="OpenCppLangTab.rc">

@@ -24,7 +24,7 @@
 
 
 //Engine
-
+#include"Engine/_eg_sipcfg.h"
 
 
 //END
