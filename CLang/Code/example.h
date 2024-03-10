@@ -2,6 +2,7 @@
 
 #include"shload.h"
 
+//Args API
 void argsApi(string args$api) {
 
 	if (args$api == args$api) {
@@ -13,16 +14,19 @@ void argsApi(string args$api) {
 	return;
 }
 
+//Put Code Here
 int _HeadMainLoad() {
 	_prtendl();
-
-	_prtoutmsg("Hello World");
-	_prtoutmsg("Open Cpp Lang Tab. System Software Framework");
-	_prtoutmsg("Copyright FoxaXu 2024");
-	_prtoutmsg("Version :  " + to_string($version_code) + " Build Code :  " + $codename);
-	_prtoutmsg("Name :    " + _$GetSelfName);
-	_prtoutmsg("Path :    " + _$GetSelfPath);
-	_prtoutmsg("Copyright FoxaXu 2024");
+	_prtoutmsg("Open Cpp Lang Tab");
+	_prtoutmsg("By FoxaXu");
+	_prtoutmsg("Github Page :   https://github.com/FoxaXuDecvin/OpenCppLangTab");
+	_prtoutmsg("Report      :    https://github.com/FoxaXuDecvin/OpenCppLangTab/issues");
+	_prtendl();
+	_prtoutmsg("---------------------------------------------------");
+	_prtoutmsg("OpenCLT ...   " + $version_code_str);
+    _prtoutmsg("Copyright FoxaXu  " + $year_message);
+    _prtoutmsg("Core Time :  " + $buildtime);
+	_prtoutmsg($version_msg);
 	_pause();
 	return 0;
 }

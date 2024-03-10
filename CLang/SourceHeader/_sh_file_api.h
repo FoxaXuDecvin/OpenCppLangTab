@@ -121,3 +121,12 @@ void _fileapi_typetext(string file) {
 //Other
 
 string _$GetSelfName = GetFileName();
+
+//File Write Not Clear
+void _fileapi_write(string _fa_file, string _fa_info) {
+	fstream f; 
+	f.open(_fa_file, ios::out | ios::app); 
+	f << _fa_info << endl;
+	f.close();
+	return;
+}
