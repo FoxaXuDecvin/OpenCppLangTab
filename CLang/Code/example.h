@@ -5,6 +5,9 @@
 //Args API
 void argsApi(string args$api) {
 
+	//if (argsSetExit) set true
+	//Process will close after args run
+
 	if (args$api == args$api) {
 		_prtoutmsg("Args = " + args$api);
 		return;

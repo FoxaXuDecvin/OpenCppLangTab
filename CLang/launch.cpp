@@ -15,6 +15,7 @@
 using namespace std;
 
 string readbuffer;
+bool argsSetExit = false;
 
 void printmsgoclt() {
     _prtendl();
@@ -49,6 +50,10 @@ int main(int argc, char* argv[]) {
         }
 
         argsApi(readbuffer);
+    }
+
+    if (argsSetExit == true) {
+        return 0;
     }
 
     int return_code = _HeadMainLoad();
