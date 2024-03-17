@@ -25,4 +25,20 @@ bool _urldown_api(string url, string savepath) {
 	//No Code
 }
 
+bool _urldown_api_nocache(string url, string savepath) {
+	savepath = savepath + "?voidcache=" + _get_random_s(1, 10000);
+	//Disabled Cache
+	_$BufferCache = URLDown(url, savepath);
+
+	//Decide
+	if (check_file_existenceA(savepath)) {
+		return true;
+	}
+	else {
+		return false;
+	}
+
+	//No Code
+}
+
 //END
