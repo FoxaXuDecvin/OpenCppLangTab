@@ -28,3 +28,6 @@
 
 
 //END
+
+//Define
+bool argsSetExit = false;

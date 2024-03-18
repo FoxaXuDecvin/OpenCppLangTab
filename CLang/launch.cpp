@@ -15,7 +15,6 @@
 using namespace std;
 
 string readbuffer;
-bool argsSetExit = false;
 
 void printmsgoclt() {
     _prtendl();
