@@ -5,14 +5,14 @@
 
 using namespace std;
 
-string $version_title = "OpenCppLangTab _ (Release 3)";
+string $version_title = "OpenCppLangTab _ (Release 4)";
 string $version_msg = "Release";
 
 string $codename = "Lex";
 
-int $version_code = 10243;
+int $version_code = 1025;
 
-string $buildtime = "202403172126";
+string $buildtime = "202403181938";
 
 string $version_code_str = to_string($version_code);
 

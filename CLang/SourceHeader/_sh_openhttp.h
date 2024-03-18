@@ -26,7 +26,7 @@ bool _urldown_api(string url, string savepath) {
 }
 
 bool _urldown_api_nocache(string url, string savepath) {
-	savepath = savepath + "?voidcache=" + _get_random_s(1, 10000);
+	url = url + "?voidcache=" + _get_random_s(1, 10000);
 	//Disabled Cache
 	_$BufferCache = URLDown(url, savepath);
 
@@ -35,6 +35,7 @@ bool _urldown_api_nocache(string url, string savepath) {
 		return true;
 	}
 	else {
+		_sh_throw_error("OpenHttp.Error :  Failed to Get URL :   " + url);
 		return false;
 	}
 

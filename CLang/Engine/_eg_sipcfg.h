@@ -13,6 +13,9 @@ string _load_sipcfg(string _sc_File,string _sc_ID) {
 		while (true) {
 			readptr++;
 			string tempptr = _fileapi_textread(_sc_File, readptr);
+			if (tempptr == "") {
+				continue;
+			}
 			if (tempptr == "ReadFailed") {
 				cout << "Failed to Load Simple Config" << endl;
 				cout << "Open File Failed :  " << _sc_File << endl;
