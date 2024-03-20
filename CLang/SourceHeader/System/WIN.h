@@ -9,6 +9,7 @@
 //Design For Windows
 const std::string pathsign = "\\";
 string RunPlatfom = "Windows (MSVC 64Bit)";//Must Include Windows/Linux one
+string _Run_SysKernel = "Win32";
 
 //Linux s   Windows  ms
 //Default Use s
