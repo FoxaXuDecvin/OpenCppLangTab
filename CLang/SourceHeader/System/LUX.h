@@ -1,3 +1,6 @@
+//For Linux Compile
+// Add Parameter "-l curl -Wformat-security"
+
 #pragma once
 #include<unistd.h>
 #include<string>
@@ -6,6 +9,7 @@
 //Please Install CURL
 #include"curl/curl.h"
 #include"sys/stat.h"
+#include<cstring>
 
 const std::string pathsign = "/";
 string RunPlatfom = "Linux (GCC 64Bit)";//Must Include Windows/Linux one
@@ -22,7 +26,7 @@ void cleanConsole() {
 }
 
 void foldercreateapi(string dir) {
-	mkdir(dir.c_str(),0755);
+	mkdir(dir.c_str(), 0755);
 }
 
 //Notice
@@ -41,16 +45,16 @@ bool check_file_existenceA(const std::string& filename) {
 }
 
 //API--------------------------
-size_t dl_req_reply(void *buffer, size_t size, size_t nmemb, void *user_p)
+size_t dl_req_reply(void* buffer, size_t size, size_t nmemb, void* user_p)
 {
-	FILE *fp = (FILE *)user_p;
+	FILE* fp = (FILE*)user_p;
 	size_t return_size = fwrite(buffer, size, nmemb, fp);
 	//cout << (char *)buffer << endl;
 	return return_size;
 }
 
 //http GET请求文件下载  
-CURLcode dl_curl_get_req(const std::string &url, std::string filename)
+CURLcode dl_curl_get_req(const std::string& url, std::string filename)
 {
 	//int len = filename.length();
 	//char* file_name = new char(len + 1);//char*最后有一个结束字符\0
@@ -60,10 +64,10 @@ CURLcode dl_curl_get_req(const std::string &url, std::string filename)
 	char* pc = new char[1024];//足够长
 	strcpy(pc, file_name);
 
-	FILE *fp = fopen(pc, "wb");
+	FILE* fp = fopen(pc, "wb");
 
 	//curl初始化  
-	CURL *curl = curl_easy_init();
+	CURL* curl = curl_easy_init();
 	// curl返回值 
 	CURLcode res;
 	if (curl)
@@ -110,7 +114,7 @@ CURLcode dl_curl_get_req(const std::string &url, std::string filename)
 }
 
 //TOOLS
-int checkCharN(string text,string chechchar ) {
+int checkCharN(string text, string chechchar) {
 	const char* c = chechchar.c_str();
 
 	if (text.find(c) != string::npos) {
@@ -125,7 +129,7 @@ string ReplaceCharN(string info, string replaceword, string nword) {
 	int checkanti = checkCharN(info, replaceword);
 	if (checkanti == 1) {
 		std::string dst_str = info;
-			std::string::size_type pos = 0;
+		std::string::size_type pos = 0;
 		while ((pos = dst_str.find(replaceword)) != std::string::npos)
 		{
 			dst_str.replace(pos, replaceword.length(), nword);
@@ -143,7 +147,7 @@ string ReplaceCharN(string info, string replaceword, string nword) {
 //0-FAILED
 //1-TRUE
 bool URLDown(string URL, string Save) {
-	Save = ReplaceCharN(Save,"\\","/");
+	Save = ReplaceCharN(Save, "\\", "/");
 
 	dl_curl_get_req(URL, Save);
 	if (check_file_existenceA(Save)) {
@@ -171,22 +175,22 @@ string GetFilePath(void) {
 	//printf("path:%s\n", szPath);
 
 	string ReplaceChar(string info, string replaceword, string nword);
-	string DATA = ReplaceChar(szPath,"\\","/");
+	string DATA = ReplaceChar(szPath, "\\", "/");
 
-    string tempdata,outdata;
-    int numbuffer = DATA.size();
-    int baseNum=-1;
+	string tempdata, outdata;
+	int numbuffer = DATA.size();
+	int baseNum = -1;
 
-    while(true){
-        tempdata = DATA[numbuffer];
-        if (tempdata == "/") break;
-        numbuffer--;
-    }
-    numbuffer--;
-    while(baseNum != numbuffer){
-        baseNum++;
-        outdata = outdata + DATA[baseNum];
-    };
+	while (true) {
+		tempdata = DATA[numbuffer];
+		if (tempdata == "/") break;
+		numbuffer--;
+	}
+	numbuffer--;
+	while (baseNum != numbuffer) {
+		baseNum++;
+		outdata = outdata + DATA[baseNum];
+	};
 
 	return outdata;
 }
@@ -213,46 +217,74 @@ string GetFileName(void) {
 }
 
 
-void Getfilepath(const char *path, const char *filename,  char *filepath)
+void Getfilepath(const char* path, const char* filename, char* filepath)
 {
-    strcpy(filepath, path);
-    if(filepath[strlen(path) - 1] != '/')
-        strcat(filepath, "/");
-    strcat(filepath, filename);
+	strcpy(filepath, path);
+	if (filepath[strlen(path) - 1] != '/')
+		strcat(filepath, "/");
+	strcat(filepath, filename);
 	//printf("path is = %s\n",filepath);
 }
- 
+
 bool removeDirectoryAPIXCGI(const char* path)
 {
-    DIR *dir;
-    struct dirent *dirinfo;
-    struct stat statbuf;
-    char filepath[256] = {0};
-    lstat(path, &statbuf);
-    
-    if (S_ISREG(statbuf.st_mode))//判断是否是常规文件
-    {
-        remove(path);
-    }
-    else if (S_ISDIR(statbuf.st_mode))//判断是否是目录
-    {
-        if ((dir = opendir(path)) == NULL)
-            return 1;
-        while ((dirinfo = readdir(dir)) != NULL)
-        {
-            Getfilepath(path, dirinfo->d_name, filepath);
-            if (strcmp(dirinfo->d_name, ".") == 0 || strcmp(dirinfo->d_name, "..") == 0)//判断是否是特殊目录
-            continue;
-            removeDirectoryAPIXCGI(filepath);
-            rmdir(filepath);
-        }
-        closedir(dir);
-    }
-    return 0;
+	DIR* dir;
+	struct dirent* dirinfo;
+	struct stat statbuf;
+	char filepath[256] = { 0 };
+	lstat(path, &statbuf);
+
+	if (S_ISREG(statbuf.st_mode))//判断是否是常规文件
+	{
+		remove(path);
+	}
+	else if (S_ISDIR(statbuf.st_mode))//判断是否是目录
+	{
+		if ((dir = opendir(path)) == NULL)
+			return 1;
+		while ((dirinfo = readdir(dir)) != NULL)
+		{
+			Getfilepath(path, dirinfo->d_name, filepath);
+			if (strcmp(dirinfo->d_name, ".") == 0 || strcmp(dirinfo->d_name, "..") == 0)//判断是否是特殊目录
+				continue;
+			removeDirectoryAPIXCGI(filepath);
+			rmdir(filepath);
+		}
+		closedir(dir);
+	}
+	return 0;
 }
 
-bool removeDirectoryAPIX(const char* path){
+bool removeDirectoryAPIX(const char* path) {
 	int rdapi = removeDirectoryAPIXCGI(path);
 	rmdir(path);
 	return rdapi;
+}
+
+bool CopyFile(string FileName, string CopyPath, int antiformatunsupport) {
+	char ch;
+	FILE* pfr = fopen(FileName.c_str(), "w");//把路径改成你文件的路径
+	FILE* pfw = fopen(CopyPath.c_str(), "w");//把路径改成你文件的路径
+
+	if (NULL == pfw)
+	{
+		perror("open file test2.txt");
+	}
+
+	if (NULL == pfr)
+	{
+		perror("open file test1.txt");
+	}
+
+	//不断的从源文件中读取字符并写入目的文件中，直到遇到EOF结束这个过程
+	while ((ch = fgetc(pfr)) != EOF)//EOF是文件结束标志
+	{
+		fputc(ch, pfw);
+	}
+	//关闭流，使用完流后记得关闭，避免占用资源
+	fclose(pfr);
+	fclose(pfw);
+	pfr = NULL;
+	pfw = NULL;
+	return 0;
 }

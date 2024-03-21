@@ -1,6 +1,6 @@
 #pragma once
 
-#include"shload.h"
+#include"../shload.h"
 
 //Args API
 void argsApi(string args$api) {
@@ -29,6 +29,9 @@ int _HeadMainLoad() {
 	_prtoutmsg("OpenCLT ...   " + $version_code_str);
     _prtoutmsg("Copyright FoxaXu  " + $year_message);
 	_prtoutmsg("Core Time :  " + $buildtime + "   " + _Run_SysKernel);
+	_prtoutmsg("---------------------------------------------------");
+	_prtoutmsg("Running File :  " + _$GetSelfName);
+	_prtoutmsg("File Path :  " + _$GetSelfPath);
 	_prtoutmsg($version_msg);
 	_pause();
 	return 0;

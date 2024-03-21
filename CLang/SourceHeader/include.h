@@ -6,9 +6,9 @@
 #include<stdio.h>
 #include<random>
 
-#include"SourceHeader/Settings/_sh_version.h"
-#include"SourceHeader/Settings/sh_settings.h"
-#include"SourceHeader/System/pub.h"
+#include"Settings/_sh_version.h"
+#include"Settings/sh_settings.h"
+#include"System/pub.h"
 
 void _sh_throw_error(string message) {
 	if (__settings_throwErrorMode == false)return;
@@ -19,11 +19,11 @@ void _sh_throw_error(string message) {
 
 #ifdef _WIN32
 //Windows
-#include"System\WIN.h"
+#include"System/WIN.h"
 
 #else
 //LINUX
-#include"System\LUX.h"
+#include"System/LUX.h"
 
 #endif // _SystemAPI
 
