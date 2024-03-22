@@ -130,3 +130,31 @@ void _fileapi_write(string _fa_file, string _fa_info) {
 	f.close();
 	return;
 }
+
+//Copy/Delete
+bool _fileapi_CpFile(string CopyFL, string CopyPath) {
+	CopyFile(CopyFL.c_str(), CopyPath.c_str(), 0);
+	if (check_file_existenceA(CopyPath)) {
+		return true;
+	}
+	else {
+		return false;
+	}
+
+	//Anti Cpp Code Check
+	return false;
+}
+
+bool _fileapi_del(string DelFL) {
+	remove(DelFL.c_str());
+
+	if (check_file_existenceA(DelFL)) {
+		return false;
+	}
+	else {
+		return true;
+	}
+
+	//Anti Cpp Code Check
+	return false;
+}
