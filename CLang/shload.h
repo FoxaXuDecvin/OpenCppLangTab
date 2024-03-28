@@ -25,7 +25,7 @@
 
 //Engine
 #include"Engine/_eg_sipcfg.h"
-
+#include"Engine/_eg_efc_api.h"
 
 //END
 

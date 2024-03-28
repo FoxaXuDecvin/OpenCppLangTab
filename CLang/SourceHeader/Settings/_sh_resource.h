@@ -8,3 +8,5 @@ string $year_message = "2022-2024";
 
 string $github_website = "https://github.com/FoxaXuDecvin/OpenCppLangTab";
 //END
+
+//Other
