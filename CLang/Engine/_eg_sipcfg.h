@@ -4,6 +4,8 @@
 
 #include"../shload.h"
 
+string tempreadbuffEr_;
+
 //Design On Calcium Project
 
 string _load_sipcfg(string _sc_File,string _sc_ID) {
@@ -22,7 +24,7 @@ string _load_sipcfg(string _sc_File,string _sc_ID) {
 				break;
 			}
 			if (tempptr == "overline") {
-				_sh_throw_error("Load Simple Config Error :  Unknown Config :  Not Found  ----  On File :    _" + _sc_File + "_");
+				_sh_throw_error("Load Simple Config Error :  Unknown Config :  Not Found  --(" + _sc_ID + ")--  On File :    _" + _sc_File + "_");
 				return "";
 			}
 			readbufferA = _api_PartRead(tempptr, "$", "=");
@@ -52,7 +54,7 @@ bool _spcfg_wiriteapi(string _sc_File, int _sc_Line, string _sc_header,string _s
 
 	string _scnew_file = "sipcfg_newtemp-" + _get_random_s(1, 99999);
 
-	string tempreadbuffEr_;
+	
 	int n_readptr_ = 1;
 	while (true) {
 		//File Write

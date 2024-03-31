@@ -11,6 +11,11 @@
 #include"sys/stat.h"
 #include<cstring>
 
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdlib.h>
+
 const std::string pathsign = "/";
 string RunPlatfom = "Linux (GCC 64Bit)";//Must Include Windows/Linux one
 string _Run_SysKernel = "Linux";
@@ -262,29 +267,28 @@ bool removeDirectoryAPIX(const char* path) {
 }
 
 bool CopyFile(string FileName, string CopyPath, int antiformatunsupport) {
-	char ch;
-	FILE* pfr = fopen(FileName.c_str(), "w");//把路径改成你文件的路径
-	FILE* pfw = fopen(CopyPath.c_str(), "w");//把路径改成你文件的路径
+	//打开文件
+	int fdStr = open(FileName.c_str(), O_RDONLY, 0666);  //原始文件
+	if (-1 == fdStr) return false;
 
-	if (NULL == pfw)
-	{
-		perror("open file test2.txt");
-	}
+	int fdDst = open(CopyPath.c_str(), O_WRONLY | O_CREAT, 0666);  //目标文件
+	if (-1 == fdDst) return false;
 
-	if (NULL == pfr)
-	{
-		perror("open file test1.txt");
+	//文件复制
+	int r;
+	char buff[1024] = { 0 };
+	while (1) {
+		r = read(fdStr, buff, 1024);
+		if (r > 0) {
+			write(fdDst, buff, r);
+		}
+		else {
+			break;
+		}
 	}
+	//文件关闭
+	close(fdStr);
+	close(fdDst);
 
-	//不断的从源文件中读取字符并写入目的文件中，直到遇到EOF结束这个过程
-	while ((ch = fgetc(pfr)) != EOF)//EOF是文件结束标志
-	{
-		fputc(ch, pfw);
-	}
-	//关闭流，使用完流后记得关闭，避免占用资源
-	fclose(pfr);
-	fclose(pfw);
-	pfr = NULL;
-	pfw = NULL;
-	return 0;
+	return true;
 }
