@@ -29,8 +29,8 @@ void _sh_throw_error(string message) {
 
 //Load Core API
 
-
+//Directory and File Full Path
 string _$GetSelfPath = GetFilePath();
-
+string _$GetSelfFull = GetFileName();
 
 //END

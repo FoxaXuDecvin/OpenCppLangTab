@@ -118,10 +118,6 @@ void _fileapi_typetext(string file) {
 	}
 }
 
-//Other
-
-string _$GetSelfName = GetFileName();
-
 //File Write Not Clear
 void _fileapi_write(string _fa_file, string _fa_info) {
 	fstream f; 

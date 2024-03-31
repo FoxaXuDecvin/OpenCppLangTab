@@ -20,7 +20,7 @@ void argsApi(string args$api) {
 //Put Code Here
 int _HeadMainLoad() {
 	_prtendl();
-	_prtoutmsg("Open Cpp Lang Tab");
+	_prtoutmsg($version_title);
 	_prtoutmsg("By FoxaXu");
 	_prtoutmsg("Github Page :   https://github.com/FoxaXuDecvin/OpenCppLangTab");
 	_prtoutmsg("Report      :    https://github.com/FoxaXuDecvin/OpenCppLangTab/issues");
@@ -30,7 +30,7 @@ int _HeadMainLoad() {
     _prtoutmsg("Copyright FoxaXu  " + $year_message);
 	_prtoutmsg("Core Time :  " + $buildtime + "   " + _Run_SysKernel);
 	_prtoutmsg("---------------------------------------------------");
-	_prtoutmsg("Running File :  " + _$GetSelfName);
+	_prtoutmsg("Running File :  " + _$GetSelfFull);
 	_prtoutmsg("File Path :  " + _$GetSelfPath);
 	_prtoutmsg($version_msg);
 	_pause();
