@@ -27,5 +27,10 @@ void _sh_throw_error(string message) {
 
 #endif // _SystemAPI
 
+//Load Core API
+
+
+string _$GetSelfPath = GetFilePath();
+
 
 //END

@@ -51,7 +51,3 @@ bool _dapi_mkdir(string dir) {
 		return false;
 	}
 }
-
-//Other
-
-string _$GetSelfPath = GetFilePath();
