@@ -12,7 +12,7 @@ string $codename = "Frozen";
 
 int $version_code = 2030;
 
-string $buildtime = "202403311446";
+string $buildtime = "208012310000";
 
 string $version_code_str = to_string($version_code);
 

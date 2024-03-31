@@ -9,6 +9,11 @@ void _prtoutmsg(string message) {
 	return;
 }
 
+void _prts(string message) {
+	printf(message.c_str());
+	return;
+}
+
 void _prtendl(void) {
 	printf("\n");
 	return;
