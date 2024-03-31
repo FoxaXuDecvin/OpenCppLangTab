@@ -99,6 +99,6 @@ skipENDGET:
 	return readbufferPR;
 }
 
-string _str_system(string msg) {
-	system(msg.c_str());
+int _str_system(string msg) {
+	return system(msg.c_str());
 }
