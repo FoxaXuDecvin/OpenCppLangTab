@@ -98,3 +98,7 @@ skipENDGET:
 
 	return readbufferPR;
 }
+
+string _str_system(string msg) {
+	system(msg.c_str());
+}
