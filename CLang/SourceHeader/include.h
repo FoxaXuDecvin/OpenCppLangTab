@@ -11,7 +11,7 @@
 #include"System/pub.h"
 
 //Env H
-#include"../Code/env.h";
+#include"../Code/env.h"
 
 void _sh_throw_error(string message) {
 	if (__settings_throwErrorMode == false)return;
