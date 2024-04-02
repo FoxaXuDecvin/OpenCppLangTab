@@ -21,7 +21,7 @@ void argsApi(string args$api) {
 int _HeadMainLoad() {
 	_prtendl();
 	_prtoutmsg($version_title);
-	_prtoutmsg("By FoxaXu");
+	_prtoutmsg("By FoxaXu        sign : " + to_string(aaa));
 	_prtoutmsg("Github Page :   https://github.com/FoxaXuDecvin/OpenCppLangTab");
 	_prtoutmsg("Report      :    https://github.com/FoxaXuDecvin/OpenCppLangTab/issues");
 	_prtendl();

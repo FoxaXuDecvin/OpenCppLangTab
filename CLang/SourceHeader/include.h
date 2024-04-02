@@ -10,6 +10,9 @@
 #include"Settings/sh_settings.h"
 #include"System/pub.h"
 
+//Env H
+#include"../Code/env.h";
+
 void _sh_throw_error(string message) {
 	if (__settings_throwErrorMode == false)return;
 	_api_prtmsg("----[ERROR](MESSAGE) :  " + message + "\n");

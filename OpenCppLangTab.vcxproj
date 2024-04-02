@@ -25,6 +25,7 @@
     <ClCompile Include="CLang\launch.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CLang\Code\env.h" />
     <ClInclude Include="CLang\Code\example.h" />
     <ClInclude Include="CLang\Code\launchscreen.h" />
     <ClInclude Include="CLang\Engine\_eg_efc_api.h" />
