@@ -6,11 +6,11 @@
 using namespace std;
 
 string $version_title = "OpenCppLangTab _ 2 (Release)";
-string $version_msg = "Prerelease";
+string $version_msg = "Release";
 
 string $codename = "Frozen";
 
-int $version_code = 2030;
+int $version_code = 2031;
 
 string $buildtime = "202404022046";
 
