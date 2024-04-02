@@ -26,7 +26,7 @@ int _HeadMainLoad() {
 	_prtoutmsg("Report      :    https://github.com/FoxaXuDecvin/OpenCppLangTab/issues");
 	_prtendl();
 	_prtoutmsg("---------------------------------------------------");
-	_prtoutmsg("OpenCLT ...   " + $version_code_str);
+	_prtoutmsg("OpenCLT ...   " + $codename + "(" + $version_msg + ")  " + $version_code_str);
     _prtoutmsg("Copyright FoxaXu  " + $year_message);
 	_prtoutmsg("Core Time :  " + $buildtime + "   " + _Run_SysKernel);
 	_prtoutmsg("---------------------------------------------------");
