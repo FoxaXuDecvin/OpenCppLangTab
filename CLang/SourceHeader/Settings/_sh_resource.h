@@ -10,3 +10,5 @@ string $github_website = "https://github.com/FoxaXuDecvin/OpenCppLangTab";
 //END
 
 //Other
+
+string readbuffer;

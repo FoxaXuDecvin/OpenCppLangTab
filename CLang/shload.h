@@ -27,6 +27,9 @@
 #include"Engine/_eg_sipcfg.h"
 #include"Engine/_eg_efc_api.h"
 
+//SDK
+#include"SDK/_sdk_textsuper.h"
+
 //END
 
 //Define

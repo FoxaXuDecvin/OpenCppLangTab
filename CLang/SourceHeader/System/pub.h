@@ -20,6 +20,7 @@ int checkChar(string text, string chechchar) {
 	}
 }
 
+//Replace Char
 string ReplaceChar(string info, string replaceword, string nword) {
 	//cout << "New Replace :  _" << info << "_  _" << replaceword << "_  _" << nword << "_" << endl;
 	int checkanti = checkChar(info, replaceword);

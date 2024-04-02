@@ -25,7 +25,10 @@
     <Filter Include="头文件\SourceHeader\Settings">
       <UniqueIdentifier>{00f13ac7-2090-4fe9-a7a2-516f10032032}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\SourceHeader\Engine">
+    <Filter Include="头文件\SDK">
+      <UniqueIdentifier>{aca83ec1-aeac-4052-a31f-bb8b599f6c22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Engine">
       <UniqueIdentifier>{0c69b789-59c9-448f-bcf7-2713c3d20ab3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -92,13 +95,16 @@
       <Filter>头文件\SourceHeader</Filter>
     </ClInclude>
     <ClInclude Include="CLang\Engine\_eg_sipcfg.h">
-      <Filter>头文件\SourceHeader\Engine</Filter>
+      <Filter>头文件\Engine</Filter>
     </ClInclude>
     <ClInclude Include="CLang\Engine\_eg_efc_api.h">
-      <Filter>头文件\SourceHeader\Engine</Filter>
+      <Filter>头文件\Engine</Filter>
     </ClInclude>
     <ClInclude Include="CLang\Code\env.h">
       <Filter>头文件\Code</Filter>
+    </ClInclude>
+    <ClInclude Include="CLang\SDK\_sdk_textsuper.h">
+      <Filter>头文件\SDK</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

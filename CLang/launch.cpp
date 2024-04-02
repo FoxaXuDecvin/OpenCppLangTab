@@ -14,8 +14,6 @@
 
 using namespace std;
 
-string readbuffer;
-
 void printmsgoclt() {
     _prtendl();
     _prtoutmsg("Build By OpenCLT");
