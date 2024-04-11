@@ -159,6 +159,7 @@ bool URLDown(string URL, string Save) {
 		return 1;
 	}
 	else {
+		remove(Save.c_str());
 		return 0;
 	}
 }
