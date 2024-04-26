@@ -1,5 +1,6 @@
 Resource Code:
-       Edit on launch.cpp
+       Edit on Code/example.h
+    put var in Code/env.h
 select your custom Cpp Header
 
 If you using Windows. Please use Visual Studio 2022
