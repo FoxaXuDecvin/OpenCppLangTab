@@ -8,6 +8,9 @@
 string _fileapi_textread(string File, int line_number);
 
 //API
+const string sw_os_NULL = "null";
+
+string sw_openfile_str = sw_os_NULL;
 
 int CountLines(string filename)
 {
@@ -153,4 +156,35 @@ bool _fileapi_del(string DelFL) {
 
 	//Anti Cpp Code Check
 	return false;
+}
+
+//SoildWrite
+
+bool _soildwrite_open(string sw_fileopen) {
+
+	sw_openfile_str = sw_fileopen;
+
+	return true;
+}
+
+bool _soildwrite_write(string info) {
+	
+	if (sw_openfile_str == sw_os_NULL) {
+		return false;
+	}
+
+	_fileapi_write(sw_openfile_str,info);
+
+	if (!check_file_existenceA(sw_openfile_str)) {
+		_sh_throw_error("Failed open soildwrite :   " + sw_openfile_str);
+		return false;
+	}
+
+	return true;
+}
+
+void _soildwrite_close() {
+	sw_openfile_str = sw_os_NULL;
+
+	return;
 }

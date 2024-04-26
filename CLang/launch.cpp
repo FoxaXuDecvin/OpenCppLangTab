@@ -46,6 +46,24 @@ int main(int argc, char* argv[]) {
             return 0;
         }
 
+        if (readbuffer == "--license") {
+            _soildwrite_open("license-oclt.txt");
+            _soildwrite_write("Build By OpenCLT");
+            _soildwrite_write($version_title + "   " + to_string($version_code));
+            _soildwrite_write("OpenCLT " + $version_msg);
+            _soildwrite_write("Code Name :   " + $codename);
+            _soildwrite_write("    Copyright FoxaXu " + $year_message);
+            _soildwrite_write(" Github :  " + $github_website);
+            _soildwrite_close();
+
+            _soildwrite_open("auther-oclt.txt");
+            _soildwrite_write("Creator :  " + Program_Creater);
+            _soildwrite_write("OpenCLT " + $version_msg);
+            _soildwrite_write("Code Name :   " + $codename);
+            _soildwrite_close();
+            return 0;
+        }
+
         argsApi(readbuffer);
     }
 

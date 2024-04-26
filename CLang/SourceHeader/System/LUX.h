@@ -16,8 +16,8 @@
 #include <fcntl.h>
 #include <stdlib.h>
 
-const string Win32_kernel = "windowsKernel";
-const string Linux_kernel = "linuxkernel";
+const string Win32_kernel = "Win32";
+const string Linux_kernel = "Linux";
 
 const std::string pathsign = "/";
 string RunPlatfom = "Linux (GCC 64Bit)";//Must Include Windows/Linux one

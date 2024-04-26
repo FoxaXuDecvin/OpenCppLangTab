@@ -7,8 +7,8 @@
 #include <vector>
 #include<ShlObj.h>
 
-const string Win32_kernel = "windowsKernel";
-const string Linux_kernel = "linuxkernel";
+const string Win32_kernel = "Win32";
+const string Linux_kernel = "Linux";
 
 //Design For Windows
 const std::string pathsign = "\\";
