@@ -19,20 +19,17 @@ void argsApi(string args$api) {
 
 //Put Code Here
 int _HeadMainLoad() {
-	_prtendl();
-	_prtoutmsg($version_title);
-	_prtoutmsg("By FoxaXu        sign : " + to_string(aaa));
-	_prtoutmsg("Github Page :   https://github.com/FoxaXuDecvin/OpenCppLangTab");
-	_prtoutmsg("Report      :    https://github.com/FoxaXuDecvin/OpenCppLangTab/issues");
-	_prtendl();
-	_prtoutmsg("---------------------------------------------------");
-	_prtoutmsg("OpenCLT ...   " + $codename + "(" + $version_msg + ")  " + $version_code_str);
-    _prtoutmsg("Copyright FoxaXu  " + $year_message);
-	_prtoutmsg("Core Time :  " + $buildtime + "   " + _Run_SysKernel);
-	_prtoutmsg("---------------------------------------------------");
-	_prtoutmsg("Running File :  " + _$GetSelfFull);
-	_prtoutmsg("File Path :  " + _$GetSelfPath);
-	_prtoutmsg($version_msg);
+	_p("----------------------------------------------------------");
+	_p("Open CPP Lang Tab       " + $version_title);
+	_p("Build version :   " + $version_code_str);
+	_p("CodeName   :   " + $codename + "  " + $version_msg);
+	_p("Release time (string)  : " + $buildtime);
+	_p("OS Kernel £º  " + _Run_SysKernel);
+	_p("----------------------------------------------------------");
+	_p("Copyright FoxaXu " + $year_message);
+	_p("Open Cpp Lang Tab    .....");
+	_p("Github : https://github.com/FoxaXuDecvin/OpenCppLangTab");
+
 	_pause();
 	return 0;
 }

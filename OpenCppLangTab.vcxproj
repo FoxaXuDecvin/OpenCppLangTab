@@ -30,6 +30,7 @@
     <ClInclude Include="CLang\Code\launchscreen.h" />
     <ClInclude Include="CLang\Engine\_eg_efc_api.h" />
     <ClInclude Include="CLang\Engine\_eg_sipcfg.h" />
+    <ClInclude Include="CLang\SDK\_sdk_textapi.h" />
     <ClInclude Include="CLang\SDK\_sdk_textsuper.h" />
     <ClInclude Include="CLang\shload.h" />
     <ClInclude Include="CLang\SourceHeader\include.h" />

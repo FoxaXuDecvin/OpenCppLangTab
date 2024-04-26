@@ -11,7 +11,7 @@
 #include"SourceHeader/_sh_prt.h"
 #include"SourceHeader/_sh_switch.h"
 
-//Dedicated-Config
+//Configuration
 #include"SourceHeader/Settings/_sh_resource.h"
 #include"SourceHeader/Settings/_sh_version.h"
 #include"SourceHeader/Settings/sh_settings.h"
@@ -29,8 +29,9 @@
 
 //SDK
 #include"SDK/_sdk_textsuper.h"
+#include"SDK/_sdk_textapi.h"
 
 //END
 
-//Define
+//switchapi
 bool argsSetExit = false;

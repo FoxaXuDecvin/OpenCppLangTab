@@ -106,6 +106,9 @@
     <ClInclude Include="CLang\SDK\_sdk_textsuper.h">
       <Filter>头文件\SDK</Filter>
     </ClInclude>
+    <ClInclude Include="CLang\SDK\_sdk_textapi.h">
+      <Filter>头文件\SDK</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="OpenCppLangTab.rc">
