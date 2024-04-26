@@ -9,6 +9,7 @@ Program compilation
 
  Linux(Ubuntu 22.04) 
  Install CURL
+ Install GCC
 
  sudo apt-get install curl
  sudo apt-get install gcc
