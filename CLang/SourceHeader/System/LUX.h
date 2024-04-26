@@ -16,9 +16,12 @@
 #include <fcntl.h>
 #include <stdlib.h>
 
+const string Win32_kernel = "windowsKernel";
+const string Linux_kernel = "linuxkernel";
+
 const std::string pathsign = "/";
 string RunPlatfom = "Linux (GCC 64Bit)";//Must Include Windows/Linux one
-string _Run_SysKernel = "Linux";
+string _Run_SysKernel = Linux_kernel;
 
 //Linux s   Windows  ms
 void sleepapi(int num) {

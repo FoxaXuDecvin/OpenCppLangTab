@@ -6,10 +6,14 @@
 #include <string>
 #include <vector>
 #include<ShlObj.h>
+
+const string Win32_kernel = "windowsKernel";
+const string Linux_kernel = "linuxkernel";
+
 //Design For Windows
 const std::string pathsign = "\\";
 string RunPlatfom = "Windows (MSVC 64Bit)";//Must Include Windows/Linux one
-string _Run_SysKernel = "Win32";
+string _Run_SysKernel = Win32_kernel;
 
 //Linux s   Windows  ms
 //Default Use s
