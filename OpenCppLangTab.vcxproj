@@ -22,34 +22,33 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CLang\launch.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="CLang\Code\env.h" />
-    <ClInclude Include="CLang\Code\example.h" />
-    <ClInclude Include="CLang\Code\launchscreen.h" />
-    <ClInclude Include="CLang\Engine\_eg_efc_api.h" />
-    <ClInclude Include="CLang\Engine\_eg_sipcfg.h" />
-    <ClInclude Include="CLang\SDK\_sdk_textapi.h" />
-    <ClInclude Include="CLang\SDK\_sdk_textsuper.h" />
-    <ClInclude Include="CLang\shload.h" />
-    <ClInclude Include="CLang\SourceHeader\include.h" />
-    <ClInclude Include="CLang\SourceHeader\Settings\sh_settings.h" />
-    <ClInclude Include="CLang\SourceHeader\Settings\_sh_resource.h" />
-    <ClInclude Include="CLang\SourceHeader\Settings\_sh_version.h" />
-    <ClInclude Include="CLang\SourceHeader\System\LUX.h" />
-    <ClInclude Include="CLang\SourceHeader\System\pub.h" />
-    <ClInclude Include="CLang\SourceHeader\System\WIN.h" />
-    <ClInclude Include="CLang\SourceHeader\_sh_directory_api.h" />
-    <ClInclude Include="CLang\SourceHeader\_sh_file_api.h" />
-    <ClInclude Include="CLang\SourceHeader\_sh_openhttp.h" />
-    <ClInclude Include="CLang\SourceHeader\_sh_prt.h" />
-    <ClInclude Include="CLang\SourceHeader\_sh_random.h" />
-    <ClInclude Include="CLang\SourceHeader\_sh_switch.h" />
-    <ClInclude Include="resource1.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="OpenCppLangTab.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="oclt_code\Code\env.h" />
+    <ClInclude Include="oclt_code\Code\example.h" />
+    <ClInclude Include="oclt_code\Code\launchscreen.h" />
+    <ClInclude Include="oclt_code\Engine\_eg_efc_api.h" />
+    <ClInclude Include="oclt_code\Engine\_eg_sipcfg.h" />
+    <ClInclude Include="oclt_code\SDK\_sdk_textapi.h" />
+    <ClInclude Include="oclt_code\SDK\_sdk_textsuper.h" />
+    <ClInclude Include="oclt_code\shload.h" />
+    <ClInclude Include="oclt_code\SourceHeader\include.h" />
+    <ClInclude Include="oclt_code\SourceHeader\Settings\sh_settings.h" />
+    <ClInclude Include="oclt_code\SourceHeader\Settings\_sh_resource.h" />
+    <ClInclude Include="oclt_code\SourceHeader\Settings\_sh_version.h" />
+    <ClInclude Include="oclt_code\SourceHeader\System\LUX.h" />
+    <ClInclude Include="oclt_code\SourceHeader\System\pub.h" />
+    <ClInclude Include="oclt_code\SourceHeader\System\WIN.h" />
+    <ClInclude Include="oclt_code\SourceHeader\_sh_directory_api.h" />
+    <ClInclude Include="oclt_code\SourceHeader\_sh_file_api.h" />
+    <ClInclude Include="oclt_code\SourceHeader\_sh_openhttp.h" />
+    <ClInclude Include="oclt_code\SourceHeader\_sh_prt.h" />
+    <ClInclude Include="oclt_code\SourceHeader\_sh_random.h" />
+    <ClInclude Include="oclt_code\SourceHeader\_sh_switch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="oclt_code\launch.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
