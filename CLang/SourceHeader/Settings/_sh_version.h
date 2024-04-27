@@ -5,12 +5,12 @@
 
 using namespace std;
 
-string $version_title = "OCLT _ 3 (Release 1)";
+string $version_title = "OCLT _ 3 (Release 2)";
 string $version_msg = "Release";
 
-string $codename = "Frozen";
+string $codename = "Shield";
 
-int $version_code = 3012;
+int $version_code = 3013;
 
 string $buildtime = "202404261954";
 

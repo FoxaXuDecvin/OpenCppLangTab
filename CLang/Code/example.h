@@ -19,6 +19,7 @@ void argsApi(string args$api) {
 
 //Put Code Here
 int _HeadMainLoad() {
+	//main
 	_p("----------------------------------------------------------");
 	_p("Open CPP Lang Tab       " + $version_title);
 	_p("Build version :   " + $version_code_str);
