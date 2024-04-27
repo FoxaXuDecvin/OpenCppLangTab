@@ -2,8 +2,9 @@
 #include"../SourceHeader/include.h"
 
 void _LaunchScreen(void) {
-    _prtendl();
-    _prtoutmsg("OpenCLT ...   " + $codename);
-    _prtendl();
-    _prtendl();
+    _pn();
+    _p("Launch Screen");
+    _p("OpenCLT ...   " + $codename);
+    _pn();
+    _pn();
 }

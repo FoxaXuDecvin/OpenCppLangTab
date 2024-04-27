@@ -25,6 +25,12 @@
     <Filter Include="头文件\sourceheader">
       <UniqueIdentifier>{72728b48-6707-430d-93f7-3bc96def1571}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\sourceheader\system">
+      <UniqueIdentifier>{0563a243-00d0-43ef-a7b5-059628dd7c06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\sourceheader\settings">
+      <UniqueIdentifier>{e634ecb9-2a01-4def-8257-6671e45878b5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt">
@@ -47,24 +53,6 @@
       <Filter>头文件\code</Filter>
     </ClInclude>
     <ClInclude Include="oclt_code\SourceHeader\include.h">
-      <Filter>头文件\sourceheader</Filter>
-    </ClInclude>
-    <ClInclude Include="oclt_code\SourceHeader\Settings\sh_settings.h">
-      <Filter>头文件\sourceheader</Filter>
-    </ClInclude>
-    <ClInclude Include="oclt_code\SourceHeader\Settings\_sh_resource.h">
-      <Filter>头文件\sourceheader</Filter>
-    </ClInclude>
-    <ClInclude Include="oclt_code\SourceHeader\Settings\_sh_version.h">
-      <Filter>头文件\sourceheader</Filter>
-    </ClInclude>
-    <ClInclude Include="oclt_code\SourceHeader\System\LUX.h">
-      <Filter>头文件\sourceheader</Filter>
-    </ClInclude>
-    <ClInclude Include="oclt_code\SourceHeader\System\pub.h">
-      <Filter>头文件\sourceheader</Filter>
-    </ClInclude>
-    <ClInclude Include="oclt_code\SourceHeader\System\WIN.h">
       <Filter>头文件\sourceheader</Filter>
     </ClInclude>
     <ClInclude Include="oclt_code\SourceHeader\_sh_directory_api.h">
@@ -99,6 +87,27 @@
     </ClInclude>
     <ClInclude Include="oclt_code\shload.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="oclt_code\SourceHeader\System\LUX.h">
+      <Filter>头文件\sourceheader\system</Filter>
+    </ClInclude>
+    <ClInclude Include="oclt_code\SourceHeader\System\pub.h">
+      <Filter>头文件\sourceheader\system</Filter>
+    </ClInclude>
+    <ClInclude Include="oclt_code\SourceHeader\System\WIN.h">
+      <Filter>头文件\sourceheader\system</Filter>
+    </ClInclude>
+    <ClInclude Include="oclt_code\SourceHeader\Settings\_sh_version.h">
+      <Filter>头文件\sourceheader\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="oclt_code\SourceHeader\Settings\sh_settings.h">
+      <Filter>头文件\sourceheader\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="oclt_code\SourceHeader\Settings\_sh_resource.h">
+      <Filter>头文件\sourceheader\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="oclt_code\SourceHeader\_sh_runcore.h">
+      <Filter>头文件\sourceheader</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

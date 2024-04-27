@@ -45,6 +45,7 @@
     <ClInclude Include="oclt_code\SourceHeader\_sh_openhttp.h" />
     <ClInclude Include="oclt_code\SourceHeader\_sh_prt.h" />
     <ClInclude Include="oclt_code\SourceHeader\_sh_random.h" />
+    <ClInclude Include="oclt_code\SourceHeader\_sh_runcore.h" />
     <ClInclude Include="oclt_code\SourceHeader\_sh_switch.h" />
   </ItemGroup>
   <ItemGroup>
