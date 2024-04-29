@@ -32,6 +32,7 @@
     <ClInclude Include="oclt_code\Engine\_eg_sipcfg.h" />
     <ClInclude Include="oclt_code\SDK\_sdk_textapi.h" />
     <ClInclude Include="oclt_code\SDK\_sdk_textsuper.h" />
+    <ClInclude Include="oclt_code\SDK\_sdk_varspace.h" />
     <ClInclude Include="oclt_code\shload.h" />
     <ClInclude Include="oclt_code\SourceHeader\include.h" />
     <ClInclude Include="oclt_code\SourceHeader\Settings\sh_settings.h" />

@@ -109,6 +109,9 @@
     <ClInclude Include="oclt_code\SourceHeader\_sh_runcore.h">
       <Filter>头文件\sourceheader</Filter>
     </ClInclude>
+    <ClInclude Include="oclt_code\SDK\_sdk_varspace.h">
+      <Filter>头文件\sdk</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="oclt_code\launch.cpp">
