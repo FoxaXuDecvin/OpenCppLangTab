@@ -12,3 +12,7 @@ string $github_website = "https://github.com/FoxaXuDecvin/OpenCppLangTab";
 //Other
 
 string readbuffer;
+
+//Do not delete these var
+
+int _argslonger = 1;

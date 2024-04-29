@@ -27,3 +27,7 @@ int _system_autoRun(string file, string arguments) {
 
 	return -1002;
 }
+
+string _get_argslonger(void) {
+	return to_string(_argslonger);
+}

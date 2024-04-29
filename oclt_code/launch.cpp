@@ -40,6 +40,9 @@ int main(int argc, char* argv[]) {
 
 
     for (int readargc = 1, fileswitch = 0; readargc != argc; readargc++) {
+
+        _argslonger++;
+
         readbuffer = argv[readargc];
         if (readbuffer == "--oclt-version") {
             printmsgoclt();

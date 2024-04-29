@@ -2,9 +2,9 @@
 
 #include"../SourceHeader/include.h"
 
-using namespace std;;
+using namespace std;
 
-//Set Var
+//Set Your var here
 
 int aaa = 1;
 
