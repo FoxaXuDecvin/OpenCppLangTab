@@ -353,33 +353,9 @@ NextRollCR:
 	goto NextRollCR;
 }
 
+string readMCS, tempInfo;
 string HeadSpaceClean(string Info) {
 	int maxCSize = Info.size();
-	if (maxCSize == -1) {
-		return "";
-	}
-	string readMCS, tempInfo;
-	int currentFit;
-
-	//cout << "Max C Size :  _" << maxCSize << endl;
-	for (currentFit = 0; currentFit < maxCSize; currentFit++) {
-		readMCS = Info[currentFit];
-		//cout << "Read MCS :  _" << readMCS << endl;
-		if (readMCS == " ") {}
-		else {
-			while (currentFit < maxCSize) {
-				//cout << "Trans Add : _" << Info[currentFit] << endl;
-				tempInfo = tempInfo + Info[currentFit];
-				currentFit++;
-			}
-		}
-	}
-	return tempInfo;
-}
-
-string HeadSpaceCleanA(string Info) {
-	int maxCSize = Info.size();
-	string readMCS, tempInfo;
 	int currentFit;
 
 	//cout << "Max C Size :  _" << maxCSize << endl;
@@ -399,6 +375,30 @@ string HeadSpaceCleanA(string Info) {
 		}
 	}
 	return tempInfo;
+}
+
+//This api include clean end space
+string fullread,tempget;
+int finget;
+string HeadSpaceCleanA(string Info) {
+	Info = HeadSpaceClean(Info);
+	finget = Info.size();
+
+	while (true) {
+		finget--;
+		tempget = Info[finget];
+		if (tempget != " ") break;
+	}
+
+	finget++;
+
+	//_p("finget size ;  " + to_string(finget));
+
+	for (int rp_temp = 0; rp_temp != finget; rp_temp++) {
+		fullread = fullread + Info[rp_temp];
+	}
+
+	return fullread;
 }
 
 int charTotal(string info,string markchar){
