@@ -20,9 +20,6 @@ void argsApi(string args$api) {
 //Put Code Here
 int _HeadMainLoad() {
 	//main
-	string tempinfoS = HeadSpaceCleanA("     HELLO WORLD 2024    ");
-
-	_p("Size :    " + to_string(tempinfoS.size()) + "[" + tempinfoS + "]");
 	_p("----------------------------------------------------------");
 	_p("Open CPP Lang Tab       " + $version_title);
 	_p("Build version :   " + $version_code_str);
