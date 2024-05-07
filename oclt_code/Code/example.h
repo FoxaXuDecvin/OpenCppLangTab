@@ -30,7 +30,7 @@ int _HeadMainLoad() {
 	_p("Copyright FoxaXu " + $year_message);
 	_p("Open Cpp Lang Tab    .....");
 	_p("Github : https://github.com/FoxaXuDecvin/OpenCppLangTab");
-	_p("Run Debug   " + _get_argslonger());
+	_p("Run ArgsLonger   " + _get_argslonger());
 
 	_pause();
 	return 0;
