@@ -31,6 +31,7 @@ int _HeadMainLoad() {
 	_p("Open Cpp Lang Tab    .....");
 	_p("Github : https://github.com/FoxaXuDecvin/OpenCppLangTab");
 	_p("Run ArgsLonger   " + _get_argslonger());
+	_p("Argument :  " + native_argument);
 
 	_pause();
 	return 0;
