@@ -2,6 +2,14 @@
 
 #include"../shload.h"
 
+bool PreLaunchLoad(void) {
+	//Put Preload code here
+	//
+
+	//End
+	return true;
+}
+
 //Args API
 void argsApi(string args$api) {
 
