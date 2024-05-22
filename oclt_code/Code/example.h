@@ -37,7 +37,7 @@ int _HeadMainLoad() {
 	_p("Github : https://github.com/FoxaXuDecvin/OpenCppLangTab");
 	_p("----------------------------------------------------------");
 	_p("Copyright FoxaXu " + $year_message);
-	_p("A Cpp Development platform");
+	_p("Default Temple");
 
 	_pause();
 	return 0;
