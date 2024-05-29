@@ -36,9 +36,7 @@ int main(int argc, char* argv[]) {
 
     if (_Run_SysKernel == Win32_kernel) {
         //Execute Code
-        if (_windows_active_65001 == true) {
-            system("chcp 65001 >nul");
-        }
+        system("chcp 65001 >nul");
     }
     if (_Run_SysKernel == Linux_kernel) {
         //Execute Code
