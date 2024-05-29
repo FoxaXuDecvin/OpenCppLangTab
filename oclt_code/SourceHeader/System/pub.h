@@ -103,3 +103,5 @@ skipENDGET:
 int _str_system(string msg) {
 	return system(msg.c_str());
 }
+
+bool _windows_active_65001 = false;
