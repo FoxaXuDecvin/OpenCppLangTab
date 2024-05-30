@@ -1,3 +1,6 @@
+//Everything is Possible
+//On OpenCppLangTab
+
 #pragma once
 
 #include"../shload.h"
@@ -38,7 +41,7 @@ int _HeadMainLoad() {
 	_p("----------------------------------------------------------");
 	_p("Copyright FoxaXu " + $year_message);
 	_p("Default Temple");
-
+	_p("Edit :   Code/example.h  -->  int _HeadMainLoad()");
 	_pause();
 	return 0;
 }
