@@ -1,5 +1,6 @@
 //Everything is Possible
 //On OpenCppLangTab
+//Code on _HeadMainLoad() 
 
 #pragma once
 
@@ -20,11 +21,11 @@ void argsApi(string args$api) {
 	//Process will close after args run
 
 	if (args$api == args$api) {
-		_prtoutmsg("Args = " + args$api);
+		_prtoutmsg("argsAPI :  Argument = " + args$api);
 		return;
 	}
 
-	_prtoutmsg("Unknown Args :  " + args$api);
+	_prtoutmsg("argsAPI :  Unknown Args :  " + args$api);
 	return;
 }
 
