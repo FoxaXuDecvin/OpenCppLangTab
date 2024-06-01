@@ -468,6 +468,7 @@ string HeadSpaceClean(string Info) {
 string fullread, tempget;
 int finget;
 //var
+string getendchar(string infos);
 string HeadSpaceCleanA(string Info) {
 	tempget = fullread = "";
 	//_p("HSC Input :  " + Info);
@@ -477,7 +478,9 @@ string HeadSpaceCleanA(string Info) {
 	while (true) {
 		finget--;
 		tempget = Info[finget];
-		if (tempget != " ") break;
+		if (tempget != " ") {
+			if (getendchar(fullread) != ";")break;
+		}
 	}
 
 	finget++;
@@ -490,6 +493,7 @@ string HeadSpaceCleanA(string Info) {
 	}
 
 	//_p("HSC Return :  " + fullread);
+
 	return fullread;
 }
 
