@@ -73,8 +73,9 @@ int main(int argc, char* argv[]) {
             return 0;
         }
 
-        if (readbuffer == "--dir-test") {
-            CreateFileMap_txt("dirmap.txt", _$GetSelfPath);
+        if (readbuffer == "--dir-list") {
+            _dapi_create_full_path("FileMap/Directory/dirmap.txt");
+            CreateFileMap_txt("FileMap/Directory/dirmap.txt", _$GetSelfPath);
             return 0;
         }
 
