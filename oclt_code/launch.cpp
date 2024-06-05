@@ -32,6 +32,10 @@ void printmsgoclt() {
 }
 
 int main(int argc, char* argv[]) {
+    if (!_dapi_ExistFolder_check(_Build_Path)) {
+        _dapi_mkdir(_Build_Path);
+    }
+
     PreLaunchLoad();
 
     if (__settings_displaylaunchscreen) {

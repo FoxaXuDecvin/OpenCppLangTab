@@ -37,12 +37,13 @@ int _HeadMainLoad() {
 	_p("Build version :   " + $version_code_str);
 	_p("CodeName   :   " + $codename + "  " + $version_msg);
 	_p("RT (string)  : " + $buildtime);
-	_p("System £º  " + _Run_SysKernel);
+	_p("System :  " + _Run_SysKernel);
 	_p("Github : https://github.com/FoxaXuDecvin/OpenCppLangTab");
 	_p("----------------------------------------------------------");
 	_p("Copyright FoxaXu " + $year_message);
-	_p("Default Temple");
+	_p("Default Temple. New Project");
 	_p("Edit :   Code/example.h  -->  int _HeadMainLoad()");
+	_p("Build Path is   " + _Build_Path);
 	_pause();
 	return 0;
 }
