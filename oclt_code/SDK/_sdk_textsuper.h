@@ -481,7 +481,7 @@ string HeadSpaceCleanA(string Info) {
 		finget--;
 		tempget = Info[finget];
 		if (tempget != " ") {
-			if (getendchar(fullread) != ";")break;
+			if (tempget != ";")break;
 		}
 	}
 
