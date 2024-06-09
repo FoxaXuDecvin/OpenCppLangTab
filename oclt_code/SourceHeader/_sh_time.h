@@ -59,8 +59,19 @@ std::string __GetCurrentTimeAPI(string __TimeMode,bool return_RAW) {
 }
 
 std::string fullcache;
+
+//Return 
+// Year/Month/Day,H:M:S
 std::string __GetFullTime(void) {
 	fullcache = __GetCurrentTimeAPI(__Time_Year, false) + "/" + __GetCurrentTimeAPI(__Time_Month, false) + "/" + __GetCurrentTimeAPI(__Time_Day, false) + "," + __GetCurrentTimeAPI(__Time_Hour, false) + ":" + __GetCurrentTimeAPI(__Time_Min, false) + ":" + __GetCurrentTimeAPI(__Time_Sec, false);
+
+	return fullcache;
+}
+
+//Return 
+// H:M:S
+std::string __GetFullClock(void) {
+	fullcache = __GetCurrentTimeAPI(__Time_Hour, false) + ":" + __GetCurrentTimeAPI(__Time_Min, false) + ":" + __GetCurrentTimeAPI(__Time_Sec, false);
 
 	return fullcache;
 }
