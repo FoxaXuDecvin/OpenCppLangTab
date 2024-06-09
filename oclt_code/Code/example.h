@@ -33,6 +33,7 @@ void argsApi(string args$api) {
 int _HeadMainLoad() {
 	//main
 	_p("----------------------------------------------------------");
+	_p("Launch Time :   " + __GetFullTime());
 	_p("Open Cpp Lang Tab       " + $version_title);
 	_p("Build version :   " + $version_code_str);
 	_p("CodeName   :   " + $codename + "  " + $version_msg);

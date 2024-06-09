@@ -48,6 +48,7 @@
     <ClInclude Include="oclt_code\SourceHeader\_sh_random.h" />
     <ClInclude Include="oclt_code\SourceHeader\_sh_runcore.h" />
     <ClInclude Include="oclt_code\SourceHeader\_sh_switch.h" />
+    <ClInclude Include="oclt_code\SourceHeader\_sh_time.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="oclt_code\launch.cpp" />
