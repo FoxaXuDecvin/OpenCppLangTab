@@ -21,11 +21,11 @@ void argsApi(string args$api) {
 	//Process will close after args run
 
 	if (args$api == args$api) {
-		_prtoutmsg("argsAPI :  Argument = " + args$api);
+		_prtoutmsg("Argument = " + args$api);
 		return;
 	}
 
-	_prtoutmsg("argsAPI :  Unknown Args :  " + args$api);
+	_prtoutmsg("Unknown Args :  " + args$api);
 	return;
 }
 
@@ -34,17 +34,16 @@ int _HeadMainLoad() {
 	//main
 	_p("----------------------------------------------------------");
 	_p("Launch Time :   " + __GetFullTime());
-	_p("Open Cpp Lang Tab       " + $version_title);
-	_p("Build version :   " + $version_code_str);
-	_p("CodeName   :   " + $codename + "  " + $version_msg);
-	_p("RT (string)  : " + $buildtime);
+	_p("OpenCppLangTab  " + $version_title + " " + $version_code_str);
+	_p("System :    " + _Run_SysKernel);
+	_p("Build Time (string)  : " + $buildtime + "  " + $version_msg);
 	_p("System :  " + _Run_SysKernel);
 	_p("Github : https://github.com/FoxaXuDecvin/OpenCppLangTab");
 	_p("----------------------------------------------------------");
 	_p("Copyright FoxaXu " + $year_message);
-	_p("Default Temple. New Project");
+	_p("Default Temple.");
 	_p("Edit :   Code/example.h  -->  int _HeadMainLoad()");
-	_p("Build Path is   " + _Build_Path);
+	_p("Public Engine Path :   " + _Build_Path);
 	_pause();
 	return 0;
 }
