@@ -5,6 +5,7 @@
 #include<string>
 #include<stdio.h>
 #include<random>
+#include<thread>
 
 #include"Settings/_sh_version.h"
 #include"Settings/sh_settings.h"

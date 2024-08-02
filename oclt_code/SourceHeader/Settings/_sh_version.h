@@ -5,13 +5,13 @@
 using namespace std;
 
 string $version_title = "OCLT _ 4 (Release)";
-string $version_msg = "Stable 20";
+string $version_msg = "Stable 20.1";
 
 string $codename = "Ocean";
 
-int $version_code = 4095;
+int $version_code = 4096;
 
-string $buildtime = "2024/08/01/18:56";
+string $buildtime = "2024/08/02/19:10";
 
 string $version_code_str = to_string($version_code);
 
