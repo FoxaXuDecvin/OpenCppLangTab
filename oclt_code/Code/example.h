@@ -44,7 +44,6 @@ int _HeadMainLoad() {
 	_p("Default Temple.");
 	_p("Edit :   Code/example.h  -->  int _HeadMainLoad()");
 	_p("Public Engine Path :   " + _Build_Path);
-
 	_pause();
 	return 0;
 }
