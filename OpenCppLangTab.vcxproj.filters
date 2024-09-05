@@ -16,9 +16,6 @@
     <Filter Include="头文件\code">
       <UniqueIdentifier>{b4bb571d-d0f5-4ad7-a6b9-6070a6b2e30f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\engine">
-      <UniqueIdentifier>{67d37544-08b4-4cdf-86c3-3d99611184da}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\sdk">
       <UniqueIdentifier>{75682e28-c80d-473d-ab1f-ee9e23d5ef5b}</UniqueIdentifier>
     </Filter>
@@ -30,6 +27,9 @@
     </Filter>
     <Filter Include="头文件\sourceheader\settings">
       <UniqueIdentifier>{e634ecb9-2a01-4def-8257-6671e45878b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\sdk\engine">
+      <UniqueIdentifier>{67d37544-08b4-4cdf-86c3-3d99611184da}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -74,10 +74,10 @@
       <Filter>头文件\sourceheader</Filter>
     </ClInclude>
     <ClInclude Include="oclt_code\Engine\_eg_efc_api.h">
-      <Filter>头文件\engine</Filter>
+      <Filter>头文件\sdk\engine</Filter>
     </ClInclude>
     <ClInclude Include="oclt_code\Engine\_eg_sipcfg.h">
-      <Filter>头文件\engine</Filter>
+      <Filter>头文件\sdk\engine</Filter>
     </ClInclude>
     <ClInclude Include="oclt_code\SDK\_sdk_textapi.h">
       <Filter>头文件\sdk</Filter>

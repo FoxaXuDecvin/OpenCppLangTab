@@ -31,6 +31,16 @@ int _system_autoRun(string file, string arguments) {
 	return resultCode;
 }
 
+int _system_autoRun_admin(string file, string arguments) {
+	if (!check_file_existenceA(file)) return -1001;
+
+	file = ReplaceChar(file, "/", "\\");
+	_Execute_Admin(file, arguments);
+
+	return resultCode;
+}
+
+
 string _get_argslonger(void) {
 	return to_string(_argslonger);
 }
