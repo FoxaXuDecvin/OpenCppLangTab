@@ -356,5 +356,5 @@ string _SystemAPI_getenv(string Environment) {
 
 bool _Execute_Admin(string File, string Args) {
 	Process_cache = "sudo " + File + " " + Args;
-	return system(Process_cache);
+	return system(Process_cache.c_str());
 }
