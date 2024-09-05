@@ -5,6 +5,7 @@
 #pragma once
 
 #include"../shload.h"
+#define _CRT_SECURE_NO_WARNINGS
 
 bool PreLaunchLoad(void) {
 	//Put Preload code here
