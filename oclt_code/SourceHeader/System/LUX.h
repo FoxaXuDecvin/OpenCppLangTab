@@ -369,7 +369,7 @@ void CreateDirMap_txt(string savefile, string path_str) {
 			if (strcmp(dirinfo->d_name, ".") == 0 || strcmp(dirinfo->d_name, "..") == 0)//判断是否是特殊目录
 				continue;
 			//CreateFileMap_txt(savefile, filepath);
-			_fileapi_write(savefile, ReplaceChar(filepath, "\\", "/"));
+			_fileapi_write(savefile, ReplaceChar(filepath, "\\", "/") + "/");
 		}
 		closedir(dir);
 	}

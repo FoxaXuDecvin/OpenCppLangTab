@@ -231,7 +231,7 @@ void CreateDirMap_txt(string savefile, string dir) {
 			// 在目录后面加上"\\"和搜索到的目录名进行下一次搜索
 			newDir = dir + "\\" + fileinfo.name;
 			//CreateFileMap_txt(savefile, newDir);//先遍历删除文件夹下的文件，再删除空的文件夹
-			_fileapi_write(savefile, ReplaceChar(newDir, "\\", "/"));
+			_fileapi_write(savefile, ReplaceChar(newDir, "\\", "/") + "/");
 		}
 		else {
 			string file_path = dir + "\\" + fileinfo.name;
