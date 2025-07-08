@@ -118,7 +118,7 @@ int _varspaceadd(string VarHead, string varinfo) {
 
 	varinfo = ReplaceCharA(varinfo, " ", "%sbar%");
 	varinfo = ReplaceCharA(varinfo, ";", "%selbar%");
-	varinfo = ReplaceCharA(varinfo,  "=","%eqbar%");
+	varinfo = ReplaceCharA(varinfo, "=","%eqbar%");
 	varinfo = ReplaceCharA(varinfo, "$", "%mnbar%");
 	varinfo = ReplaceCharA(varinfo, "\\", "%B_SLASH%");
 	varinfo = ReplaceCharA(varinfo, "\n", "%$LineFeed%");
