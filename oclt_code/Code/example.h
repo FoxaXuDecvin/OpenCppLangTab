@@ -16,7 +16,7 @@ bool PreLaunchLoad(void) {
 }
 
 //Args API
-void argsApi(string args$api) {
+void argsApi(std::string args$api) {
 
 	//if (argsSetExit) set true
 	//Process will close after args run
