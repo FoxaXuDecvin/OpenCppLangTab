@@ -5,7 +5,7 @@
 
 //All Resources
 
-std::string $year_message = "2022-2025";
+std::string $year_message = "2022-2026";
 
 std::string $github_website = "https://github.com/FoxaXuDecvin/OpenCppLangTab";
 //END
