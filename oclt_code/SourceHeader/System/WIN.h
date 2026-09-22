@@ -173,10 +173,10 @@ int removeDirectoryAPIX(std::string dir) {
 	return 1;
 }
 
-std::string Process_cache;
+std::string Process_cache,Process_cache_dir;
 void _fileapi_write(std::string _fa_file, std::string _fa_info);
 std::string p1_filepath = GetFilePath();
-void CreateFileMap_txt(std::string savefile,std::string dir) {
+void CreateFileMap_txt(std::string savefile, std::string dir) {
 	using namespace std;
 	//在目录后面加上"\\*.*"进行第一次搜索
 	std::string newDir = dir + "\\*.*";
@@ -199,7 +199,7 @@ void CreateFileMap_txt(std::string savefile,std::string dir) {
 
 			// 在目录后面加上"\\"和搜索到的目录名进行下一次搜索
 			newDir = dir + "\\" + fileinfo.name;
-			CreateFileMap_txt(savefile,newDir);//先遍历删除文件夹下的文件，再删除空的文件夹
+			CreateFileMap_txt(savefile, newDir);//先遍历删除文件夹下的文件，再删除空的文件夹
 		}
 		else {
 			std::string file_path = dir + "\\" + fileinfo.name;
@@ -214,6 +214,7 @@ void CreateFileMap_txt(std::string savefile,std::string dir) {
 
 	return;
 }
+
 void CreateDirMap_txt(std::string savefile, std::string dir) {
 	using namespace std;
 	//在目录后面加上"\\*.*"进行第一次搜索
@@ -243,7 +244,7 @@ void CreateDirMap_txt(std::string savefile, std::string dir) {
 		else {
 			std::string file_path = dir + "\\" + fileinfo.name;
 			Process_cache = file_path;
-			Process_cache = ReplaceChar(Process_cache, p1_filepath, "");
+			//Process_cache = ReplaceChar(Process_cache, p1_filepath, "");
 			//cout << file_path.c_str() << endl;
 			_fileapi_write(savefile, ReplaceChar(Process_cache, "\\", "/"));
 		}

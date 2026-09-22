@@ -16,7 +16,7 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 
-void _sh_throw_error(std::string message) {
+; void _sh_throw_error(std::string message) {
 	if (__settings_throwErrorMode == false)return;
 	_api_prtmsg("----[ERROR](MESSAGE) :  " + message + "\n");
 	return;

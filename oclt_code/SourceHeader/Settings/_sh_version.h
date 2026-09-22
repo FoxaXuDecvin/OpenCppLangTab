@@ -6,14 +6,14 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 
-std::string $version_title = "OCLT _ 6 (Release)";
-std::string $version_msg = "Release 3";
+std::string $version_title = "OCLT 2026 Sep. Update";
+std::string $version_msg = "LTS";
 
 std::string $codename = "Sunlight";
 
-int $version_code = 5012;
+int $version_code = 5013;
 
-std::string $buildtime = "2026/04/28/15:55";
+std::string $buildtime = "2026/09/22/20:52";
 
 std::string $version_code_str = std::to_string($version_code);
 

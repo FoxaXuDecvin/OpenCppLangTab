@@ -1,0 +1,1 @@
+g++ launch.cpp -l curl -o Calcium.exe 

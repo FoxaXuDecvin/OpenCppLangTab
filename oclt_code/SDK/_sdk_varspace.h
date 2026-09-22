@@ -1,7 +1,9 @@
+
 // Var Space  - Based on CalciumProject/VarSpace.h
 
 #pragma once
 #include"../shload.h"
+#include <string>
 
 #define _CRT_SECURE_NO_WARNINGS
 //PUBLIC API
@@ -54,51 +56,51 @@ std::string ReplaceCharA(std::string info, std::string replaceword, std::string 
 	}
 }
 
-std::string cutlineblockB(std::string lines, std::string cutmark, int line) {
-	using namespace std;
-	std::string backapi;
+std::string cutlineblockB(
+    const std::string& lines,
+    const std::string& cutmark,
+    int line)
+{
+    // line 使用 1-based 索引
+    if (line <= 0 || lines.empty() || cutmark.empty()) {
+        return "";
+    }
 
-	if (checkCharA(lines, cutmark) == 0) {
-		return "NUL";
-	}
+    // 保持原函数行为：没有找到分隔符时返回 "NUL"
+    if (lines.find_first_of(cutmark) == std::string::npos) {
+        return "NUL";
+    }
 
-	char* readcut = NULL;
+    std::size_t start = 0;
+    int currentLine = 0;
 
-	char Texts[65535] = "a";
-	char CUMark[65535] = "a";
+    while (start < lines.size()) {
+        // 跳过连续分隔符
+        start = lines.find_first_not_of(cutmark, start);
+        if (start == std::string::npos) {
+            break;
+        }
 
-	strcpy(Texts, lines.c_str());
-	strcpy(CUMark, cutmark.c_str());
+        const std::size_t end = lines.find_first_of(cutmark, start);
+        ++currentLine;
 
-	int cutrecord = 1;
-	char* token = strtok(Texts, CUMark);
-	if (token == NULL) {
-		backapi = "";
-		return backapi;
-	}
+        if (currentLine == line) {
+            if (end == std::string::npos) {
+                return lines.substr(start);
+            }
 
-	if (cutrecord == line) {
+            return lines.substr(start, end - start);
+        }
 
-		//cout << "CUTLINEBLOCK CHECK OK, RETURN :  _" << token << "_" << endl;
-		backapi = token;
-		return backapi;
-	}
+        if (end == std::string::npos) {
+            break;
+        }
 
-NextRollCR:
-	if (cutrecord == line) {
-		//cout << "CUTLINEBLOCK CHECK OK, RETURN :  _" << token << "_" << endl;
-		backapi = token;
-		return backapi;
-	}
-	if (token == NULL) {
-		backapi = "";
-		return backapi;
-	}
-	cutrecord++;
-	token = strtok(NULL, CUMark);
-	goto NextRollCR;
+        start = end;
+    }
+
+    return "";
 }
-
 
 // 0 - OK
 // 1 - Error

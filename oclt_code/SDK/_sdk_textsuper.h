@@ -745,3 +745,56 @@ bool BatchFileReplace_(std::string File, std::string RPChar, std::string NChar) 
 
 	return true;
 }
+
+std::string HeadSizeRemoveA(std::string SourceChar, int RemoveSize) {
+	// 参数合法性检查
+	if (RemoveSize <= 0) {
+		return SourceChar;
+	}
+
+	if (RemoveSize >= static_cast<int>(SourceChar.size())) {
+		return "";
+	}
+
+	// 从指定位置开始截取
+	return SourceChar.substr(RemoveSize);
+}
+
+bool BatchFileCRemove_(std::string File, int HSZ) {
+	using namespace std;
+	//Exist FIle
+
+	if (!check_file_existence(File))return false;
+
+	LPTempFile = "TempReplaceFiles.txt";
+	if (check_file_existence(LPTempFile)) _fileapi_del(LPTempFile);
+	if (check_file_existence(LPTempFile))return false;
+	;
+	for (int FilePoint = 1; true; FilePoint++) {
+		if (!check_file_existence(File))return false;
+		LPcache = _fileapi_textread(File, FilePoint);
+		if (LPcache == "") {
+			_fileapi_write(LPTempFile, "");
+			continue;
+		}
+		if (LPcache == "ReadFailed") {
+			break;
+		}
+		if (LPcache == "overline") {
+			break;
+		}
+
+		//LPTransfCache = ReplaceChar(LPcache, RPChar, NChar);
+		LPTransfCache = HeadSizeRemoveA(LPcache,HSZ);
+
+		_fileapi_write(LPTempFile, LPTransfCache);
+	}
+
+	while (check_file_existence(File))_fileapi_del(File);
+
+	_fileapi_CpFile(LPTempFile, File);
+
+	_fileapi_del(LPTempFile);
+
+	return true;
+}

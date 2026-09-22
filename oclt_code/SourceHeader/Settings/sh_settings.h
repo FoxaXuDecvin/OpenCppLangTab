@@ -7,8 +7,8 @@
 //Type :   true/false
 
 //Display Launch Screen
-bool __settings_displaylaunchscreen = false;
-unsigned int __settings_displaylaunchscreen_time = 1;
+bool __settings_displaylaunchscreen = true;
+unsigned int __settings_displaylaunchscreen_time = 3;
 // if true
 // program will display launch screen
 // On   Code/launchscreen.h
