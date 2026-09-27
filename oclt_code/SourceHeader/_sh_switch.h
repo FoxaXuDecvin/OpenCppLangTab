@@ -13,7 +13,7 @@ std::string _swt_buffer;
 void _pause() {
 	using namespace std;
 	printf($_pause.c_str());
-	getchar();
+	getline(cin, _swt_buffer);
 	return;
 }
 
